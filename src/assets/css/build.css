@@ -8,6 +8,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/age-calculator-app-main/assets/src/fonts/Poppins-Bold.ttf")
-    format("ttf");
+  src:
+    local(Poppins),
+    url(/src/assets/fonts/Poppins-Regular.ttf) format("ttf");
 }
