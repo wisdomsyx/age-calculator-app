@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wisdom Aigbotsua" />
+    <meta name="Description" content="A age calculator site." />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="icon" href="./assets/images/icon-arrow.svg" />
+    <script src="./assets/js/main.js" defer></script>
+    <title>Age calculator</title>
+</head>
+
+<body class="mt-[10%] flex items-center justify-center font-pop text-[2rem]">
+    <main class="rounded-xl rounded-br-[110px] p-8 shadow-lg shadow-[#f03232]">
+        <section class="flex flex-row justify-evenly">
+            <div class="mr-4 flex flex-col">
+                <p class="mb-2 text-sm" id="day-text">DAY</p>
+                <input type="number onkeyup='return false' onwheel='return false'" placeholder="DD" maxlength='2' required class="input-field" id="day" />
+                <p class="mt-1 text-base text-red-custom" id="day-validation"></p>
+            </div>
+
+            <div class="mr-4 flex flex-col">
+                <p class="mb-2 text-sm" id="month-text">MONTH</p>
+                <input type="number onkeyup='return false' onwheel='return false'" maxlength='2' placeholder="MM" required class="input-field" id="month" />
+                <p class="mt-1 text-base text-red-custom" id="month-validation"></p>
+            </div>
+
+            <div class="mr-4 flex flex-col">
+                <p class="mb-2 text-sm" id="year-text">YEAR</p>
+                <input type="number onkeyup='return false' onwheel='return false'" maxlength='4' placeholder="YYYY" required class="input-field" id="year" />
+                <p class="mt-1 text-base text-red-custom" id="year-validation"></p>
+            </div>
+        </section>
+
+        <section class="relative mt-4 flex flex-col bg-white p-4">
+            <img src="./assets/images/icon-arrow.svg" class="mx-auto h-auto w-10 rounded-full bg-purple-custom p-2 hover:bg-black sm:absolute sm:bottom-[85%] sm:right-0" id="image-button" />
+
+            <div class="flex flex-row items-center transition-all duration-1000">
+                <div class=" mr-2 flex flex-row gap-4 text-purple-custom" id="display-years">
+                    <p class="h-2 w-5 -skew-x-6 transform bg-purple-custom text-[2rem]"></p>
+                    <p class="h-2 w-5 -skew-x-6 transform bg-purple-custom"></p>
+                </div>
+                <p class="font-extrabold text-black">years</p>
+            </div>
+
+            <div class="flex flex-row items-center">
+                <div class="mr-2 flex flex-row gap-4 text-purple-custom" id="display-months">
+                    <p class="bg-purple h-2 w-5 -skew-x-6 transform bg-purple-custom text-[2rem]" id='dash'></p>
+                    <p class="bg-purple h-2 w-5 -skew-x-6 transform bg-purple-custom"></p>
+                </div>
+                <p class="font-extrabold text-black">months</p>
+            </div>
+
+            <div class="flex flex-row items-center">
+                <div class="mr-2 flex flex-row gap-4 text-purple-custom" id="display-days">
+                    <p class="bg-purple h-2 w-5 -skew-x-6 transform bg-purple-custom text-[2rem]"></p>
+                    <p class="bg-purple h-2 w-5 -skew-x-6 transform bg-purple-custom"></p>
+                </div>
+                <p class="font-extrabold text-black">days</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

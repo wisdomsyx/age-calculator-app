@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "base/base";
+
+@import "tailwindcss/components";
+@import "components/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/age-calculator-app-main/assets/src/fonts/Poppins-Bold.ttf")
+    format("ttf");
+}
