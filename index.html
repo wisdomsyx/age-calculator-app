@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name='author' content='Wisdom Aigbotsua'>
+   <meta name='descripion' content='Article preview component'>
+   <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/assets/public/css/compiled.css">
+   <title>Article Preview components</title>
+</head>
+
+<body class='flex flex-col items-center justify-center h-screen bg-bodyColor font-manrope'>
+   <main class='flex flex-col justify-center items-center shadow-lg w-[320px] mt-4 sm:flex-row sm:shadow-none relative'>
+      <img src="/assets/images/drawers.jpg" alt="" class='rounded-tl-lg rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-none sm:rounded-bl-lg sm:h-[266px]'>
+
+      <section class='p-5 font-bold rounded-bl-lg rounded-br-lg sm:rounded-bl-none sm:rounded-br-none bg-mainSectionColor' id='main-section'>
+         <p class='mb-4 text-black text-left w-[230px] sm:w-[350px] sm:min-h-fit'>
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+         </p>
+         <p class='font-bold opacity-90 text-shareSectionColor sm:min-w-fit '>
+            Ever been in a room and felt like somthing was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+         </p>
+
+         <!-- MOBILE SHARE SECTION -->
+         <div class='flex flex-row justify-between mt-4 text-black sm:hidden item-center' id='user-profile'>
+            <div class='flex flex-row'>
+               <img src="/assets/images/avatar-michelle.jpg" alt="" class='rounded-full w-[50px] h-auto shadow-xl bg-black'>
+               <div class='ml-4'>
+                  <h3 class='whitespace-nowrap'>Michelle Appleton</h3>
+                  <p class='' id='dateMobile'></p>
+               </div>
+            </div>
+            <img src="/assets/images/icon-share.svg" alt="" class='w-[50px] h-auto rounded-full bg-textColor p-4' id='share-image-button-mobile'>
+         </div>
+         <!-- / MOBILE SHARE SECTION -->
+
+         <!-- DESKTOP SHARE SECTION -->
+         <div class='flex-row justify-between hidden mt-4 text-black sm:flex item-center' id='user-profile'>
+            <div class='flex flex-row'>
+               <img src="/assets/images/avatar-michelle.jpg" alt="" class='rounded-full w-[50px] h-auto shadow-xl bg-black'>
+               <div class='ml-4'>
+                  <h3 class='whitespace-nowrap'>Michelle Appleton</h3>
+                  <p class='' id='dateDesktop'></p>
+               </div>
+            </div>
+            <img src="/assets/images/icon-share.svg" alt="" class='w-[50px] h-auto rounded-full bg-textColor p-4 ' id='share-image-button-desktop'>
+         </div>
+         <!-- / DESKTOP SHARE SECTION -->
+      </section>
+
+      <!-- SOCIAL MEDIA ICONS-->
+      <section class='bg-shareSectionColor w-[320px] rounded-bl-lg rounded-br-lg hidden lg:absolute left-[93.5%] lg:top-[49%] lg:rounded-lg' id='share-section'>
+         <div class='flex flex-row items-center justify-between p-5 lg:justify-evenly h-14'>
+            <p class=' tracking-[0.25em] uppercase text-mainSectionColor'>share</p>
+            <div class='flex flex-row items-center gap-x-4'>
+               <a href="https://www.facebook.com" target='_blank'><img src="/assets/images/icon-facebook.svg" alt=""></a>
+               <a href="https://www.x.com" target='_blank'><img src="/assets/images/icon-twitter.svg" alt=""></a>
+               <a href="https://www.pinterest.com" target='_blank'><img src="/assets/images/icon-pinterest.svg" alt=""></a>
+            </div>
+            <img src="/assets/images/icon-share.svg" alt="" class='w-[50px] h-auto rounded-full p-4 bg-white lg:hidden'>
+         </div>
+         <i class="absolute left-[160.5px] fa-solid fa-caret-down fa-2xl text-shareSectionColor hidden lg:block"></i>
+      </section>
+      <!-- / SOCIAL MEDIA ICONS-->
+
+   </main>
+   <script src='/assets/src/js/main.js' type='module'></script>
+</body>
+
+</html>
